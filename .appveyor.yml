@@ -22,6 +22,7 @@ build_script:
       echo $env:PATH
       get-command bash
       get-command wsl
+      get-command lscpu
   - pwsh: docker version
   - pwsh: docker info
   - pwsh: docker-compose --version
