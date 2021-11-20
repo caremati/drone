@@ -5,6 +5,5 @@ platform:
   - x64
 
 build_script:
-  - lscpu
-  - net user
-  - net localgroup
+  - import os
+  - os.system('lscpu')
